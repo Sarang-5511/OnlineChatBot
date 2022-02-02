@@ -1,0 +1,140 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 4px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(58, 58, 58);
+}
+.wrapper{
+width: 370px;
+border-radius: 5px;
+color: rgb(0, 0, 0);
+border-top: none;
+border: 1px solid rgb(230, 213, 213);
+}
+.wrapper .title{
+    background-color: black;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 3px;
+   /* padding-left: 10px; */
+    text-align: center;
+    line-height: 60px;
+    color: white;
+}
+.wrapper .form{
+    padding: 20px 15px;
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.wrapper .form .inbox{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+
+}
+.wrapper .form .user-inbox{
+  
+   justify-content: flex-end;
+    margin: 15px 0;
+
+}
+.wrapper .form .inbox .icon{
+    color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 20px;
+    /* padding-right: 10px; */
+    text-align: center;
+}
+
+
+.wrapper .form .inbox .msg-header{
+    max-width: 160px;
+     background-color: rgb(0, 0, 0);
+     border-radius: 10px;
+     padding: 2px 15px;
+     margin-left: 10px;
+     color: white;
+     
+ }
+ .wrapper .form .inbox .msg-header p{
+  word-break: break-all;
+    
+     
+ }
+ .wrapper .form .user-inbox .msg-header{
+    max-width: 150px;
+     background-color: rgba(248, 236, 236, 0.993);
+     border-radius: 10px;
+     padding: 2px 15px;
+     margin-left: 10px;
+     color: rgb(0, 0, 0);
+     font-weight: 700;
+ }
+.wrapper .typing-field{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(206, 206, 203);
+    height: 60px;
+    width: 100%;
+}
+.wrapper .typing-field .input-data{
+    margin-top: 10px;
+    height: 40px;
+    width: 335px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    
+}
+.wrapper .typing-field .input-data input{
+    padding: 0 0 0 5px;
+    /* padding: 0 20px; */
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    /* padding: 0 60px 0 20px; */
+
+}
+.wrapper .typing-field .input-data input:valid ~ button{
+    opacity: 1;
+    pointer-events:auto;
+}
+.wrapper .typing-field .input-data button{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+   height: 30px;
+   width: 60px;
+   font-size: 16px;
+   background-color: black;
+   color: white;
+   border: none;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   opacity: 0;
+   pointer-events: none;
+    
+}
+.wrapper .typing-field .input-data button:hover{
+    background-color: rgb(20, 17, 17);
+ 
+}
